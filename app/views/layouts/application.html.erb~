@@ -8,8 +8,7 @@
 </head>
 <body>
 
-<%= content_tag :body, class: controller.controller_name do %>
-  <%= yield %>
-<% end %>
+<%= yield %>
+
 </body>
 </html>
