@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString1
+  title: Book1
   description: MyText1
   image_url: http://www.personalinjurysolicitorsdublin.info/wp-content/uploads/2014/06/car-accident-what-to-do-about-it.jpg
   price: 3.00
