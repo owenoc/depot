@@ -6,12 +6,13 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+
+
+<%= content_tag :body, class: controller.controller_name do %>
 <div id="banner">
   <%= image_tag("logo.png") %>
   <%= @page_title || "Pragmatic Bookshelf" %>
 </div>
-<%= content_tag :body, class: controller.controller_name do %>
   <div id="columns">
   <div id="side">
     <ul>
