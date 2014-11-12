@@ -28,7 +28,7 @@ test "image url must point to an image file" do
   product = products(:one)
   ok = %w{ frog.gif frog.jpg frog.png FROG.PNG fRoG.PnG
            http://a.b.c/x/y/z/frog.png  }
-  bad = %w{ frog.doc frog.png/less frog.png.less frog.jpeg }
+  bad = %w{ frog.doc frog.png/less frog.png.less }
 
   ok.each do |url|
     product.image_url = url
