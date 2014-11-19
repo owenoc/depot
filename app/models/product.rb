@@ -7,6 +7,7 @@ validates :image_url, allow_blank: true, format: {
   with: %r{\.(gif|jpg|png|jpeg)\Z}i,
   message: 'must be a URL for GIF, JPG or PNG image.'
 }
+has_many :orders, through: :line_items
 has_many :line_items
 private
 
